@@ -1,0 +1,115 @@
+<!DOCTYPE html> 
+<html lang = "en">
+    <script type = "text/javascript"> </script>
+    <head> 
+        <title>I'm Renata Del Vecchio</title>
+    </head>
+    <body class> 
+        <div id= "SITE_CONTAINER"> 
+            <div id = "top_bar">
+                <div class = "links"> 
+                    <a href="https://www.linkedin.com/in/renata-del-vecchio/"><img border = "0" alt = "LinkedIn" src = "LinkedIn.png" width = "25", height = "25"></a> 
+                    <a href="https://github.com/kalte0"><img border = "0" alt = "GitHub" src = "GitHub.png" width = "25", height = "25"></a>
+                </div>
+                <div class = "hamburger"> <img border = "0" src = "Hamburger.png" width = "25" height = "25"></div>
+            </div>
+            <div id = "main-image">
+                <!-- <img border = "0" alt = "Chickadee on a tree branch. Very Cute." src = "Bird.png">-->
+                <div id = "hello", class = "title">Hello!</div>    
+                <div id = "intro">&emsp;My name is Renata Del Vecchio, I'm a programmer! <br>Neat! Take a look around for a bird's eye view. </div>
+            </div>
+            <div id = "about-me"> 
+                <h1 class = "title">About me</h1>
+                <p>&emsp;Here's a little paragraph explaining more about me! This is the elevator pitch for who I am, basically.</p>
+            </div>
+            <div id = "navigation"> 
+                <div class = "circle", class = "experience"></div>
+                <div class = "text", class = "experience"></div>
+                <div class = "circle", class = "blog"></div>
+                <div class = "text", class = "blog"></div>
+                <div class = "circle", class = "resume"></div>
+                <div class = "text", class = "resume"></div>
+            </div>
+        </div>
+        <style> 
+            body { 
+                margin: 0; 
+                padding: 0; 
+                font-family: Verdana, sans-serif;
+                color: rgb(57,26,36);
+            }
+            #SITE_CONTAINER { 
+                display: flex; 
+                flex-direction: column; 
+                justify-content:right; 
+            }
+            .title { 
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-weight:bold;  
+            }
+            #top_bar { 
+                display: flex; 
+                height: 50px; 
+                flex-direction: row;
+                justify-content: space-between; 
+                align-items: center;  
+                padding-left: 15%;
+                padding-right:20%; 
+                background-color: rgb(57,26,36);
+            }
+            #hamburger {
+                margin-left:auto; 
+            }
+            .links { 
+                display: flex; 
+                flex-direction: row; 
+                justify-content: space-around; 
+                align-items: center; 
+                
+            }
+            .links > a { 
+                color: whitesmoke;
+                margin: 10px; 
+                font-size: 15px; 
+            }
+
+            #main-image {  
+                padding-top: 90vh;
+                background-image: url("Bird.png"); 
+                background-position:center;
+                background-repeat: no-repeat;
+                background-size:cover;
+            }
+
+            #main-image > img { 
+                float: right; 
+                margin-right:-10cqw;
+            }
+            #hello { 
+                font-size: 150px;   
+                position: absolute; 
+                left: 15%;
+                top: 160px;  
+            }
+            #intro { 
+                position: absolute; 
+                left: 10%; 
+                font-size: 20px; 
+                top: 350px;
+            }
+
+            #about-me { 
+                padding: 35px;
+                text-align: center; 
+                
+            }
+            #about-me > h1 {
+                margin: auto; 
+                width: 50%; 
+                font-size: 40px; 
+                padding-bottom: 20px; 
+            }
+            
+        </style>
+    </body>
+</html> 
