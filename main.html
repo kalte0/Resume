@@ -6,7 +6,7 @@
     </head>
     <body class> 
         <div id= "SITE_CONTAINER"> 
-            <div id = "top_bar">
+            <div id = "top_bar", class = "bar">
                 <div class = "links"> 
                     <a href="https://www.linkedin.com/in/renata-del-vecchio/"><img border = "0" alt = "LinkedIn" src = "LinkedIn.png" width = "25", height = "25"></a> 
                     <a href="https://github.com/kalte0"><img border = "0" alt = "GitHub" src = "GitHub.png" width = "25", height = "25"></a>
@@ -22,15 +22,52 @@
                 <h1 class = "title">About me</h1>
                 <p>&emsp;Here's a little paragraph explaining more about me! This is the elevator pitch for who I am, basically.</p>
             </div>
-            <div id = "navigation"> 
-                <div class = "circle", class = "experience"></div>
-                <div class = "text", class = "experience"></div>
-                <div class = "circle", class = "blog"></div>
-                <div class = "text", class = "blog"></div>
-                <div class = "circle", class = "resume"></div>
-                <div class = "text", class = "resume"></div>
+            <div id = "sky-background">
+                <div class = "green-box">
+                    <div id = "navigation"> 
+                        <div class = "blog">
+                            <img class = "nav-image", src = "Blog.png"> 
+                            <p>Read about what I've been working on, including the process of making this website!</p>
+                        </div>
+                        <div class = "experience">
+                            <img class = "nav-image", src = "Experience.png"> 
+                            <p>Vocational, academic, and professional highlights.</p>
+                        </div>
+                        <div class = "resume">
+                            <img class = "nav-image", src = "Resume.png"> 
+                            <p>Download my professional resume!</p>
+                        </div>
+                     </div>
+                </div>
             </div>
-        </div>
+            <div id = "mountain-background"> 
+                <div class = "green-box", id = "contact-box">
+                    <div id = "bottom-navigation">
+                        <div id = "left-nav">
+                            <div id = "contact", class = "title">
+                                Contact
+                            </div>
+                            <div style = "color:white;">rdelvecchi@brynmawr.edu</div>
+                            <div class = "links", style = "margin-top:20vh; margin-bottom: 1vh"> 
+                                <a href="https://www.linkedin.com/in/renata-del-vecchio/"><img border = "0" alt = "LinkedIn" src = "LinkedIn.png" width = "60", height = "60"></a> 
+                                <a href="https://github.com/kalte0"><img border = "0" alt = "GitHub" src = "GitHub.png" width = "60", height = "60"></a>
+                                <a href="file:///Users/renatadelvecchio/Resume/getwizarded.html"><img alt = "Wizard", src = "WizardIcon.png", width = "60", height= "60"></a>
+                            </div>
+                        </div>
+                        <div id = "mid-nav"> 
+                            <!--<div class = "title", style = "color:white;font-size:2em">Navigation</div>-->
+                            <div>Resume</div>
+                            <div>Experience</div>
+                            <div>Blog</div>
+                        </div> 
+                        <div id = "right-nav"> 
+                           
+                        </div>
+                    </div>
+                </div>
+                <div id= "bottom-bar", class = "bar"> 
+                </div>
+            </div>
         <style> 
             body { 
                 margin: 0; 
@@ -47,15 +84,23 @@
                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                 font-weight:bold;  
             }
-            #top_bar { 
+            #top_bar {
+                padding-left: 15%;
+                padding-right:20%; 
+                background-color: rgb(57,26,36);
+            }
+            #bottom-bar { 
+                background-color: rgb(96, 176, 108);
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            .bar { 
                 display: flex; 
                 height: 50px; 
                 flex-direction: row;
                 justify-content: space-between; 
                 align-items: center;  
-                padding-left: 15%;
-                padding-right:20%; 
-                background-color: rgb(57,26,36);
             }
             #hamburger {
                 margin-left:auto; 
@@ -74,16 +119,11 @@
             }
 
             #main-image {  
-                padding-top: 90vh;
+                padding-top: 85vh;
                 background-image: url("Bird.png"); 
                 background-position:center;
                 background-repeat: no-repeat;
                 background-size:cover;
-            }
-
-            #main-image > img { 
-                float: right; 
-                margin-right:-10cqw;
             }
             #hello { 
                 font-size: 150px;   
@@ -101,15 +141,103 @@
             #about-me { 
                 padding: 35px;
                 text-align: center; 
-                
             }
             #about-me > h1 {
                 margin: auto; 
                 width: 50%; 
                 font-size: 40px; 
-                padding-bottom: 20px; 
+                padding-bottom: 20px;
             }
-            
+            .green-box { 
+                background-color: rgba(44, 77, 73, 0.9);
+                height: inherit;
+                float: center;
+                width: 80%;
+                margin-left: 10%;
+            }
+            #navigation { 
+                padding-top: 100px;
+                padding-bottom: 100px; 
+                display: flex; 
+                flex-wrap: wrap; 
+                justify-content: space-around;
+                padding-left: 10%; 
+                padding-right: 10%;
+                width: fit-content;
+            }
+            #navigation > div { 
+                display: flex; 
+                min-width: 200px; 
+                flex-direction: column; 
+                justify-content: left; 
+                align-items: center;
+                text-align: center;
+                max-width: 30%;
+                color: white; 
+            }
+            .nav-image {
+                justify-content: center; 
+                width: 200px; 
+                height: 200px; 
+            }
+            #sky-background { 
+                background-image: url("Clouds.png");
+                background-position-x:center;
+                background-repeat:repeat-y;
+                display: inline-block;
+            }
+            #mountain-background {                 
+                background-image: url("Mountains.png");
+                background-position-x: center;
+                background-repeat: repeat; 
+                background-size: auto;
+                background-position-y: 50%;
+            }
+            #bottom-navigation { 
+                display: flex; 
+                justify-content: space-around;
+                height: inherit;
+                flex-wrap: wrap;
+            }
+            #bottom-navigation > div { 
+                text-align: center; 
+                color: white; 
+                min-width: 30%
+            }
+
+            #contact-box { 
+                display: flex; 
+                flex-direction: column;
+                justify-content: end;
+                flex-wrap: wrap;
+            }
+          
+            #contact { 
+                background:rgb(96, 176, 108);
+                text-align: center;
+                font-size: 2.6em;
+                margin-bottom: 10px;
+                color: rgb(57,26,36)
+            }
+            #mid-nav {
+                margin-top:10dvh;
+            }
+            #mid-nav > div { 
+                margin: 30px;
+            }
+            #right-nav > div { 
+
+            }
+              /*
+            .contact { 
+                background-color: white;
+                margin: 10px;
+                padding: 3px;
+                width: 30vw
+            }
+            #contact-message { 
+                height: 200px;
+            }*/
         </style>
     </body>
 </html> 
